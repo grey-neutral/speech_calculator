@@ -1,5 +1,3 @@
-import "./styles.css";
-
 const transcriptEl = document.querySelector("#transcript");
 const expressionEl = document.querySelector("#expression");
 const resultEl = document.querySelector("#result");
