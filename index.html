@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speech Calc Pro</title>
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="dashboard-header">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="eyebrow">Next-gen calculation</p>
+          <h1 class="hero-title">
+            <span class="title-line" data-i18n="titleLead">Math at the</span>
+            <span class="title-accent">
+              <span data-i18n="titleAccent">Speed of Sound</span><span class="title-period">.</span>
+            </span>
+          </h1>
+          <p class="subtitle" data-i18n="subtitle">
+            Experience the weightless intelligence of Voice-to-Math. Speech Calc Pro translates
+            complex speech into precise equations with effortless clarity.
+          </p>
+          <div class="hero-ctas" aria-label="Hero actions">
+            <button class="primary-cta" id="get-started-button" type="button" data-i18n-aria-label="getStarted">
+              <span data-i18n="getStarted">Get Started</span>
+              <span aria-hidden="true">→</span>
+            </button>
+          </div>
+        </div>
+        <div class="header-actions" aria-label="Account tools">
+          <div class="language-picker">
+            <button
+              class="language-button"
+              id="language-button"
+              type="button"
+              aria-haspopup="listbox"
+              aria-expanded="false"
+              aria-label="Choose dictation language"
+              data-i18n-aria-label="chooseLanguage"
+            >
+              <span id="selected-language-label" aria-hidden="true">🇺🇸</span>
+            </button>
+            <div class="language-menu" id="language-menu" role="listbox" aria-label="Dictation language" data-i18n-aria-label="languageMenu">
+              <button type="button" role="option" data-language="en-US" aria-selected="true">🇺🇸 English</button>
+              <button type="button" role="option" data-language="es-ES">🇪🇸 Español</button>
+              <button type="button" role="option" data-language="fr-FR">🇫🇷 Français</button>
+              <button type="button" role="option" data-language="de-DE">🇩🇪 Deutsch</button>
+              <button type="button" role="option" data-language="it-IT">🇮🇹 Italiano</button>
+              <button type="button" role="option" data-language="pt-PT">🇵🇹 Português</button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="dashboard-grid" id="calculator-dashboard" aria-label="Speech calculator dashboard" data-i18n-aria-label="dashboardAria">
+        <article class="hero-card result-panel" aria-live="polite">
+          <div class="panel-status">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span id="support-status">Checking mic</span>
+          </div>
+          <p class="panel-label" data-i18n="panelLabel">Ready to calculate</p>
+          <p class="result" id="result">0.00</p>
+          <p class="transcript" id="transcript">Tap record and say “subtract three from five hundred”.</p>
+          <input
+            class="expression"
+            id="expression"
+            type="text"
+            autocomplete="off"
+            spellcheck="false"
+            placeholder="Type a calculation, e.g. subtract 3 from 500"
+            aria-label="Type a calculation"
+            data-i18n-aria-label="manualInputAria"
+          />
+        </article>
+
+        <article class="record-card" aria-label="Record voice calculation" data-i18n-aria-label="recordAria">
+          <button class="mic-button" id="mic-button" type="button" aria-label="Start voice calculation" data-i18n-aria-label="startAria">
+            <span class="mic-icon" aria-hidden="true"></span>
+          </button>
+          <div class="voice-bars" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <h2 id="recording-state">Ready to listen</h2>
+          <p id="hint">Try “500 minus 3”, “42 times 12”, or “square root of 144”.</p>
+        </article>
+
+        <article class="history-card" id="history-card">
+          <div class="card-heading">
+            <h2 data-i18n="liveResults">Live Results</h2>
+            <span class="record-light" aria-hidden="true"></span>
+          </div>
+          <div class="result-line">
+            <span data-i18n="current">Current</span>
+            <strong id="current-line">No active calculation</strong>
+          </div>
+          <div class="result-line muted">
+            <span data-i18n="lastResult">Last Result</span>
+            <strong id="last-line">No previous result</strong>
+          </div>
+          <ol class="history-list" id="history-list" aria-label="Recent calculations" data-i18n-aria-label="recentCalculations"></ol>
+        </article>
+
+        <article class="templates-card" id="templates-card">
+          <h2 data-i18n="quickTemplates">Quick Templates</h2>
+          <div class="template-grid">
+            <button type="button" data-template-key="sum" data-template="12 plus 8 plus 30">Sum</button>
+            <button type="button" data-template-key="subtract" data-template="subtract 3 from 500">Subtract</button>
+            <button type="button" data-template-key="multiply" data-template="42 times 12">Multiply</button>
+            <button type="button" data-template-key="divide" data-template="144 divided by 12">Divide</button>
+            <button type="button" data-template-key="root" data-template="square root of 144">Root</button>
+            <button type="button" data-template-key="power" data-template="2 to the power of 8">Power</button>
+            <button type="button" data-template-key="percent" data-template="20 percent of 150">Percent</button>
+            <button type="button" data-template-key="factorial" data-template="5 factorial">Factorial</button>
+          </div>
+        </article>
+
+        <article class="insights-card" id="insights-card">
+          <div>
+            <strong id="numbers-detected">0</strong>
+            <span data-i18n="numbersDetected">Numbers detected</span>
+          </div>
+          <div>
+            <strong id="precision-score">Ready</strong>
+            <span data-i18n="recognitionState">Recognition state</span>
+          </div>
+          <div>
+            <strong>∞</strong>
+            <span data-i18n="possibilities">Possibilities</span>
+          </div>
+        </article>
+      </section>
+
+      <footer class="app-footer">
+        <span data-i18n="footer">© 2026 Built for focus.</span>
+      </footer>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
