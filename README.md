@@ -31,8 +31,6 @@
 Speech Calc Pro is built around a simple idea: math should be as fast as saying it out loud.
 The interface listens for calculations, turns speech into a normalized editable expression, and updates the result in real time.
 
-The visual direction mirrors the app itself: soft glass panels, quiet shadows, and a purple-to-magenta signal gradient inspired by Apple-style product surfaces.
-
 ## Highlights
 
 | Voice-to-math | Editable results | Multilingual dictation |
@@ -43,16 +41,6 @@ The visual direction mirrors the app itself: soft glass panels, quiet shadows, a
 | --- | --- | --- |
 | Supports addition, subtraction, multiplication, division, powers, roots, percentages, factorials, and more. | Long decimals are capped to 4 displayed places so the interface stays clean. | One-tap examples fill the same editable expression field. |
 
-## Design System
-
-| Token | Color | Use |
-| --- | --- | --- |
-| Deep ink | `#111217` | Headlines and primary text |
-| Electric violet | `#5B4CF2` | Active states and brand accents |
-| Royal purple | `#7C36DF` | Gradient midpoint |
-| Sonic magenta | `#BD0F8F` | Mic button and calls to action |
-| Soft glass | `rgba(255, 255, 255, 0.66)` | Dashboard cards |
-| Aura mist | `#F3F1FB` | Page atmosphere |
 
 ## Run Locally
 
