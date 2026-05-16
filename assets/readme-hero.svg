@@ -1,0 +1,107 @@
+<svg width="1200" height="620" viewBox="0 0 1200 620" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Speech Calc Pro hero artwork</title>
+  <desc id="desc">A glassmorphism speech calculator dashboard with purple and pink gradients.</desc>
+  <defs>
+    <linearGradient id="page" x1="0" y1="0" x2="1200" y2="620" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FBFBFE"/>
+      <stop offset="0.46" stop-color="#F3F1FB"/>
+      <stop offset="1" stop-color="#FAF8FB"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="170" y1="174" x2="586" y2="174" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5B4CF2"/>
+      <stop offset="0.38" stop-color="#7C36DF"/>
+      <stop offset="0.72" stop-color="#A218B4"/>
+      <stop offset="1" stop-color="#C0005E"/>
+    </linearGradient>
+    <linearGradient id="button" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#6848E5"/>
+      <stop offset="1" stop-color="#BE0F86"/>
+    </linearGradient>
+    <linearGradient id="bars" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#6656DF"/>
+      <stop offset="1" stop-color="#BD0F8F"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(928 112) rotate(127) scale(360)">
+      <stop stop-color="#DDD9FA" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#DDD9FA" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(740 522) rotate(146) scale(310)">
+      <stop stop-color="#F3D8FB" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#F3D8FB" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="28" stdDeviation="32" flood-color="#231C3A" flood-opacity="0.13"/>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="170%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#7530B8" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="620" rx="42" fill="url(#page)"/>
+  <rect width="1200" height="620" rx="42" fill="url(#glowA)"/>
+  <rect width="1200" height="620" rx="42" fill="url(#glowB)"/>
+
+  <g opacity="0.88">
+    <circle cx="98" cy="88" r="5" fill="#5B4CF2"/>
+    <circle cx="1054" cy="484" r="6" fill="#C0005E"/>
+    <circle cx="995" cy="116" r="3" fill="#8A80EC"/>
+    <path d="M72 518C148 480 230 494 294 534" stroke="#D7D2F6" stroke-width="2" stroke-linecap="round"/>
+    <path d="M926 76C995 42 1064 54 1116 91" stroke="#EADCF8" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(82 74)">
+    <rect x="0" y="0" width="166" height="38" rx="19" fill="#FFFFFF" fill-opacity="0.68" stroke="#634EE1" stroke-opacity="0.08"/>
+    <circle cx="23" cy="19" r="4" fill="#5A35E4"/>
+    <text x="38" y="24" font-family="Inter, SF Pro Display, Arial, sans-serif" font-size="14" font-weight="760" letter-spacing="1.3" fill="#3527D8">NEXT-GEN CALCULATION</text>
+  </g>
+
+  <text x="82" y="178" font-family="Inter, SF Pro Display, Arial, sans-serif" font-size="72" font-weight="820" fill="#111217">Math at the</text>
+  <text x="82" y="257" font-family="Inter, SF Pro Display, Arial, sans-serif" font-size="72" font-weight="820" fill="url(#accent)">Speed of Sound.</text>
+  <text x="84" y="318" font-family="Inter, SF Pro Display, Arial, sans-serif" font-size="22" fill="#2D2D3B">
+    <tspan x="84" dy="0">Voice-to-math for quick, editable calculations</tspan>
+    <tspan x="84" dy="34">with multilingual dictation and precise results.</tspan>
+  </text>
+
+  <a href="https://grey-neutral.github.io/speech_calculator/" target="_blank">
+    <rect x="84" y="376" width="202" height="58" rx="29" fill="url(#button)" filter="url(#softShadow)"/>
+    <text x="128" y="412" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="780" fill="#FFFFFF">Launch App</text>
+    <path d="M244 405h20m0 0-8-8m8 8-8 8" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </a>
+
+  <g filter="url(#shadow)">
+    <rect x="646" y="88" width="408" height="376" rx="44" fill="#FFFFFF" fill-opacity="0.66" stroke="#FFFFFF" stroke-opacity="0.78"/>
+    <rect x="684" y="126" width="112" height="48" rx="24" fill="#FFFFFF" fill-opacity="0.75"/>
+    <text x="718" y="157" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="760" fill="#27223B">12 + 8</text>
+    <circle cx="705" cy="150" r="10" fill="#F3F0FF"/>
+    <path d="M701 150h8M705 146v8" stroke="#5B4CF2" stroke-width="1.8" stroke-linecap="round"/>
+
+    <g transform="translate(816 142)">
+      <rect x="0" y="28" width="8" height="76" rx="4" fill="url(#bars)" opacity="0.58"/>
+      <rect x="20" y="10" width="8" height="112" rx="4" fill="url(#bars)" opacity="0.78"/>
+      <rect x="40" y="-8" width="8" height="148" rx="4" fill="url(#bars)"/>
+      <rect x="60" y="10" width="8" height="112" rx="4" fill="url(#bars)" opacity="0.78"/>
+      <rect x="80" y="28" width="8" height="76" rx="4" fill="url(#bars)" opacity="0.58"/>
+    </g>
+
+    <text x="739" y="310" font-family="Inter, Arial, sans-serif" font-size="27" fill="#4F4D60">"square root of 144"</text>
+    <rect x="803" y="329" width="92" height="4" rx="2" fill="url(#button)"/>
+
+    <g transform="translate(793 368)">
+      <circle cx="58" cy="58" r="58" fill="url(#button)" filter="url(#softShadow)"/>
+      <path d="M58 34c-11 0-20 9-20 20v16c0 11 9 20 20 20s20-9 20-20V54c0-11-9-20-20-20Z" stroke="#FFFFFF" stroke-width="6"/>
+      <path d="M29 66v4c0 16 13 29 29 29s29-13 29-29v-4M58 99v19M42 118h32" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+    </g>
+
+    <rect x="864" y="438" width="126" height="48" rx="24" fill="#FFFFFF" fill-opacity="0.78"/>
+    <text x="902" y="469" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="780" fill="#111217">99.4%</text>
+    <path d="M885 457h12v12h-12z" stroke="#7C36DF" stroke-width="2"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="360" y="404" width="286" height="120" rx="34" fill="#FFFFFF" fill-opacity="0.62" stroke="#FFFFFF" stroke-opacity="0.74"/>
+    <text x="392" y="447" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="800" letter-spacing="1.4" fill="#111217">LIVE RESULTS</text>
+    <circle cx="608" cy="442" r="6" fill="#C0005E"/>
+    <text x="392" y="486" font-family="Inter, Arial, sans-serif" font-size="18" fill="#6B6878">Current</text>
+    <text x="482" y="486" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="760" fill="#2D2BD6">500 - 3 = 497</text>
+  </g>
+</svg>
